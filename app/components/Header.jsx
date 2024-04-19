@@ -33,7 +33,7 @@ function Header() {
             </li>
             <li>
               <div  className="nav-link  drop-list">
-                ремонт та обслуговування  <span className="treangel">⏷</span>
+                ремонт та обслуговування  <span >⏷</span>
                 <div className="drop-down-list-wrap">
                   <ul className="drop-down-list">
                     <li><a href="/service" className="nav-link">Металопластикових вікон та дверей</a></li>
@@ -50,7 +50,7 @@ function Header() {
             </li>
             <li>
               <div className="nav-link drop-list">
-                двері <span className="treangel">⏷</span>
+                двері <span >⏷</span>
                 <div className="drop-down-list-wrap">
                   <ul className="drop-down-list">
                     <li>
@@ -79,7 +79,7 @@ function Header() {
             </li>
             <li>
               <div className="nav-link drop-list">
-                ворота <span className="treangel">⏷</span>
+                ворота <span >⏷</span>
                 <div className="drop-down-list-wrap">
                   <ul className="drop-down-list">
                     <li>
@@ -103,7 +103,7 @@ function Header() {
             </li>
             <li>
               <div  className="nav-link drop-list">
-                жалюзі та ролети <span className="treangel">⏷</span>
+                жалюзі та ролети <span >⏷</span>
                 <div className="drop-down-list-wrap">
                   <ul className="drop-down-list">
                     <li><a href="/jaluzi" className="nav-link">жалюзі</a></li>
@@ -116,7 +116,7 @@ function Header() {
             </li>
             <li>
               <div className="nav-link drop-list">
-                Комплектуючі для вікон <span className="treangel">⏷</span>
+                Комплектуючі для вікон <span >⏷</span>
                 <div className="drop-down-list-wrap">
                   <ul className="drop-down-list">
                     <li><a href="/grid" className="nav-link">Підвіконня</a></li>
