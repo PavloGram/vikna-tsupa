@@ -1,0 +1,19 @@
+.contact-wrap {
+  width: 100vw;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.con-title {
+  font-size: 80px;
+}
+
+.con-img {
+  position: absolute;
+  top: 350px;
+  right: 400px;
+  height: 400px;
+  width: 185px;
+}

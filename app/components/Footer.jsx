@@ -1,11 +1,11 @@
-import { pacifico } from "../ui/fonts";
+import { libre, pacifico } from "../ui/fonts";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-wrap">
         <div>
-          <a href="#" className={`footer-logo ${pacifico.className}`}>
+          <a href="#" className={`footer-logo ${libre.className}`}>
             Віконний майстер
           </a>
           <ul className="footer-social-link-list">

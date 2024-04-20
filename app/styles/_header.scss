@@ -4,14 +4,14 @@
 
   background-color: #fff;
   z-index: 10;
-  @media screen and (min-width: 860px) {
+  @media screen and (min-width: 940px) {
     // height: 150px;
     padding: 20px 20px 20px 20px;
   }
 }
 .header::after {
   display: none;
-  @media screen and (min-width: 860px) {
+  @media screen and (min-width: 940px) {
     display: block;
     content: "";
     position: absolute;
@@ -24,7 +24,7 @@
 }
 .header-wrap {
   display: none;
-  @media screen and (min-width: 860px) {
+  @media screen and (min-width: 940px) {
     display: block;
   }
 }
@@ -37,6 +37,14 @@
   margin: 0 auto 10px auto;
   font-size: 22px;
 }
+
+.two-block{
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+
 
 .main-link {
   text-decoration: none;
@@ -75,13 +83,17 @@
 .nav-link {
   text-decoration: none;
   color: #000;
+  text-transform: uppercase;
 }
 
 .nav-link:hover {
-  color: orangered;
+  @media screen and (min-width: 940px) {
+    color: orangered;
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  }
+  
 }
 
 .mob-menu {
@@ -92,7 +104,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (min-width: 860px) {
+  @media screen and (min-width: 940px) {
     display: none;
   }
 }
@@ -184,4 +196,61 @@
   position: absolute;
   top: -20%;
   
+}
+
+.mob-menu-drop{
+  position: relative;
+}
+
+.mob-menu-drop-list-wrap{
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  // transform: translateY(-100%);
+  // transform-origin: top;
+  opacity: 0;
+  transition-property: opacity, transform, height, padding;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 400ms;
+  height: 0;
+  padding: 0;
+ 
+}
+.showService{
+//  transform: translateY(0);
+opacity: 1;
+ padding: 10px 0 ;
+  height: 100px;
+
+}
+
+.showDoor{
+  opacity: 1;
+  padding: 10px 0 ;
+   height: 100px;
+
+}
+
+.showVorota{
+  opacity: 1;
+  padding: 10px 0 ;
+   height: 70px;
+}
+
+.showRoletu{
+  opacity: 1;
+  padding: 10px 0 ;
+   height: 70px;
+}
+
+.showJaluzi{
+  opacity: 1;
+  padding: 10px 0 ;
+   height: 80px;
+}
+
+.showComplekt{
+  opacity: 1;
+  padding: 10px 0 ;
+   height: 80px;
 }
