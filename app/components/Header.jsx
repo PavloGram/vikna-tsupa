@@ -3,6 +3,7 @@ import { useState } from "react";
 import CloseIcon from "../ui/CloseIcon";
 import Burger from "../ui/Burger";
 import { libre, pacifico } from "../ui/fonts";
+import Link from "next/link";
 
 function Header() {
   const [showMobMenu, setShowMobMenu] = useState(false);
@@ -17,21 +18,21 @@ function Header() {
     <header className="header">
       <div className="header-wrap">
         <div className="adress-block">
-          <a href="#" className={`main-link  ${libre.className}`}>
+          <Link href="/" className={`main-link  ${libre.className}`}>
             Віконний майстер
-          </a>
+          </Link>
           <div className="two-block">
             <p>
               Чернівці,
               <br /> 29 Березня, 45а
             </p>
             <div className="tel-block">
-              <a href="tel:+380503745265" className="nav-link header-tel">
+              <Link href="tel:+380503745265" className="nav-link header-tel">
                 050-374-52-65
-              </a>
-              <a href="tel:+380673723780" className="nav-link header-tel">
+              </Link>
+              <Link href="tel:+380673723780" className="nav-link header-tel">
                 067-372-37-80
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -39,9 +40,9 @@ function Header() {
         <nav className="header-nav">
           <ul className="main-menu">
             <li>
-              <a href="/" className="nav-link">
+              <Link href="/" className="nav-link">
                 головна
-              </a>
+              </Link>
             </li>
             <li>
               <div className="nav-link  drop-list">
@@ -49,38 +50,38 @@ function Header() {
                 <div className="drop-down-list-wrap">
                   <ul className="drop-down-list">
                     <li>
-                      <a href="/service" className="nav-link">
+                      <Link href="/service/remont-rolet" className="nav-link">
                         Ролети
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/service" className="nav-link">
+                      <Link href="/service/remont-dverey" className="nav-link">
                         Двері будь-які
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/service" className="nav-link">
+                      <Link href="/service/remont-vikon" className="nav-link">
                         Вікна
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/service" className="nav-link">
+                      <Link href="/service/remont-vorit" className="nav-link">
                         Ворота
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/service" className="nav-link">
+                      <Link href="/service/furnitura" className="nav-link">
                         Фурнітура
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </div>
             </li>
             <li>
-              <a href="/window" className="nav-link">
+              <Link href="/window" className="nav-link">
                 Металопластикові вікна
-              </a>
+              </Link>
             </li>
             <li>
               <div className="nav-link drop-list">
@@ -88,29 +89,29 @@ function Header() {
                 <div className="drop-down-list-wrap">
                   <ul className="drop-down-list">
                     <li>
-                      <a href="#" className="nav-link">
+                      <Link href="/dveri/metaloplastukovi-dveri" className="nav-link">
                         Металопластикові двері
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="nav-link">
+                      <Link href="/dveri/broniovani-dveri" className="nav-link">
                         Броньовані двері{" "}
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="nav-link">
+                      <Link href="/dveri/mijkimnatni-dveri" className="nav-link">
                         Міжкімнатні двері
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="nav-link">
+                      <Link href="/dveri/protupojejni-dveri" className="nav-link">
                         Двері протипожежні
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="nav-link">
+                      <Link href="/dveri/tehnichni-dveri" className="nav-link">
                         Технічні двері
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -122,19 +123,19 @@ function Header() {
                 <div className="drop-down-list-wrap">
                   <ul className="drop-down-list">
                     <li>
-                      <a href="/garage" className="nav-link">
+                      <Link href="/vorota/garajni-vorota" className="nav-link">
                         Гаражні ворота
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/garage" className="nav-link">
+                      <Link href="/vorota/vidkatni-vorota" className="nav-link">
                         Відкатні ворота
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/garage" className="nav-link">
+                      <Link href="/vorota/avtomatuka" className="nav-link">
                         Автоматика
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -146,19 +147,19 @@ function Header() {
                 <div className="drop-down-list-wrap">
                   <ul className="drop-down-list">
                     <li>
-                      <a href="/jaluzi" className="nav-link">
+                      <Link href="/roletu/aluminievi-roletu" className="nav-link">
                         Алюмінієві
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/jaluzi" className="nav-link">
+                      <Link href="/roletu/roletni-vorota" className="nav-link">
                         Ролетні ворота
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/jaluzi" className="nav-link">
+                      <Link href="/roletu/roletu-na-vikna" className="nav-link">
                         Ролети на вікна
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -170,24 +171,24 @@ function Header() {
                 <div className="drop-down-list-wrap">
                   <ul className="drop-down-list">
                     <li>
-                      <a href="/jaluzi" className="nav-link">
+                      <Link href="/jaluzi/den-nich" className="nav-link">
                         День-ніч
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/jaluzi" className="nav-link">
+                      <Link href="/jaluzi/horuzontalni" className="nav-link">
                         Горизонтальні
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/jaluzi" className="nav-link">
+                      <Link href="/jaluzi/vertukalni" className="nav-link">
                         Вертикальні
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/jaluzi" className="nav-link">
+                      <Link href="/jaluzi/rulonni-chtoru" className="nav-link">
                         Рулонні штори
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -199,24 +200,24 @@ function Header() {
                 <div className="drop-down-list-wrap">
                   <ul className="drop-down-list">
                     <li>
-                      <a href="/grid" className="nav-link">
+                      <Link href="/complektuychi/pidvikonnia" className="nav-link">
                         Підвіконня
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/grid" className="nav-link">
+                      <Link href="/complektuychi/vidluvu" className="nav-link">
                         Відливи
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/grid" className="nav-link">
+                      <Link href="/complektuychi/moskitni-sitku" className="nav-link">
                         Москітні сітки
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/grid" className="nav-link">
+                      <Link href="/complektuychi/furnitura" className="nav-link">
                         Фурнітура
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -224,17 +225,17 @@ function Header() {
             </li>
 
             <li>
-              <a href="/contact" className="nav-link">
+              <Link href="/contact" className="nav-link">
                 контакти
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
       </div>
       <div className="mob-menu">
-        <a href="#" className={`main-link  ${libre.className}`}>
+        <Link href="/" className={`main-link  ${libre.className}`}>
           Віконний майстер
-        </a>
+        </Link>
         <button
           type="button"
           className="mob-menu-btn"
@@ -262,24 +263,24 @@ function Header() {
                     showService ? "showService" : null
                   }`}
                 >
-                  <ul>
+                  <ul className="mob-menu-drop-list">
                     <li>
-                      <a href="/" className="nav-link">
+                      <a href="/service/remont-rolet" className="nav-link">
                         Pолети
                       </a>
                     </li>
                     <li>
-                      <a href="/" className="nav-link">
+                      <a href="/service/remont-dverey" className="nav-link">
                         Двері будь-які
                       </a>
                     </li>
                     <li>
-                      <a href="/" className="nav-link">
+                      <a href="/service/remont-vikon" className="nav-link">
                         Вікна
                       </a>
                     </li>
                     <li>
-                      <a href="/" className="nav-link">
+                      <a href="/service/remont-vorit" className="nav-link">
                         Ворота
                       </a>
                     </li>
@@ -293,7 +294,7 @@ function Header() {
               </div>
             </li>
             <li>
-              <a href="#" className="nav-link">
+              <a href="/window" className="nav-link">
                 металопластикові ВІКНА
               </a>
             </li>
@@ -309,27 +310,27 @@ function Header() {
                 >
                   <ul>
                     <li>
-                      <a href="/" className="nav-link">
+                      <a href="/dveri/metaloplastukovi-dveri" className="nav-link">
                         Металопластикові двері
                       </a>
                     </li>
                     <li>
-                      <a href="/" className="nav-link">
+                      <a href="/dveri/broniovani-dveri" className="nav-link">
                         Броньовані двері
                       </a>
                     </li>
                     <li>
-                      <a href="/" className="nav-link">
+                      <a href="/dveri/mijkimnatni-dveri" className="nav-link">
                         Міжкімнатні двері
                       </a>
                     </li>
                     <li>
-                      <a href="/" className="nav-link">
+                      <a href="/dveri/protupojejni-dveri" className="nav-link">
                         Двері протипожежні
                       </a>
                     </li>
                     <li>
-                      <a href="/" className="nav-link">
+                      <a href="/dveri/tehnichni-dveri" className="nav-link">
                         Технічні двері
                       </a>
                     </li>
@@ -346,9 +347,9 @@ function Header() {
                     showVorota ? "showVorota" : null
                   }`}>
                     <ul>
-                      <li><a href="/" className="nav-link">Гаражні ворота</a></li>
-                      <li><a href="/" className="nav-link">Відкатні ворота</a></li>
-                      <li><a href="/" className="nav-link">Автоматика</a></li>
+                      <li><a href="/vorota/garajni-vorota" className="nav-link">Гаражні ворота</a></li>
+                      <li><a href="/vorota/vidkatni-vorota" className="nav-link">Відкатні ворота</a></li>
+                      <li><a href="/vorota/avtomatuka" className="nav-link">Автоматика</a></li>
                     </ul>
                   </div>
               </div>
@@ -360,9 +361,9 @@ function Header() {
                     showRoletu ? "showRoletu" : null
                   }`}>
                   <ul>
-                    <li><a a href="/" className="nav-link">Алюмінієві</a></li>
-                    <li><a a href="/" className="nav-link">Ролетні ворота</a></li>
-                    <li><a a href="/" className="nav-link">Ролети на вікна</a></li>
+                    <li><a  href="/roletu/aluminievi-roletu" className="nav-link">Алюмінієві</a></li>
+                    <li><a  href="/roletu/roletni-vorota" className="nav-link">Ролетні ворота</a></li>
+                    <li><a  href="/roletu/roletu-na-vikna" className="nav-link">Ролети на вікна</a></li>
                   </ul>
                 </div>
               </div>
@@ -374,10 +375,10 @@ function Header() {
                     showJaluzi ? "showJaluzi" : null
                   }`}>
                   <ul>
-                    <li><a href="/" className="nav-link">День-ніч</a></li>
-                    <li><a href="/" className="nav-link">Горизонтальні</a></li>
-                    <li><a href="/" className="nav-link">Вертикальні</a></li>
-                    <li><a href="/" className="nav-link">Рулонні штори</a></li>
+                    <li><a href="/jaluzi/den-nich" className="nav-link">День-ніч</a></li>
+                    <li><a href="/jaluzi/horuzontalni" className="nav-link">Горизонтальні</a></li>
+                    <li><a href="/jaluzi/vertukalni" className="nav-link">Вертикальні</a></li>
+                    <li><a href="/jaluzi/rulonni-chtoru" className="nav-link">Рулонні штори</a></li>
                   </ul>
                  </div>
               </div>
@@ -389,10 +390,10 @@ function Header() {
                     showComplekt ? "showComplekt" : null
                   }`}>
                     <ul>
-                      <li><a href="/" className="nav-link">Підвіконня</a></li>
-                      <li><a href="/" className="nav-link">Відливи</a></li>
-                      <li><a href="/" className="nav-link">Москітні сітки</a></li>
-                      <li><a href="/" className="nav-link">Фурнітура</a></li>
+                      <li><a href="/complektuychi/pidvikonnia" className="nav-link">Підвіконня</a></li>
+                      <li><a href="/complektuychi/vidluvu" className="nav-link">Відливи</a></li>
+                      <li><a href="/complektuychi/moskitni-sitku" className="nav-link">Москітні сітки</a></li>
+                      <li><a href="/complektuychi/furnitura" className="nav-link">Фурнітура</a></li>
                     </ul>
                   </div>
               </div>
