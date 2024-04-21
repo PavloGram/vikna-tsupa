@@ -247,9 +247,9 @@ function Header() {
         <nav className={`mob-menu-nav ${showMobMenu ? "activeModal" : null}`}>
           <ul className="mob-menu-list">
             <li>
-              <a href="/" className="nav-link">
+              <Link href="/" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
                 ГОЛОВНА
-              </a>
+              </Link>
             </li>
             <li>
               <div className="nav-link mob-menu-drop">
@@ -265,38 +265,38 @@ function Header() {
                 >
                   <ul className="mob-menu-drop-list">
                     <li>
-                      <a href="/service/remont-rolet" className="nav-link">
+                      <Link href="/service/remont-rolet" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
                         Pолети
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/service/remont-dverey" className="nav-link">
+                      <Link href="/service/remont-dverey" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
                         Двері будь-які
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/service/remont-vikon" className="nav-link">
+                      <Link href="/service/remont-vikon" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
                         Вікна
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/service/remont-vorit" className="nav-link">
+                      <Link href="/service/remont-vorit" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
                         Ворота
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/" className="nav-link">
+                      <Link href="/service/furnitura" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
                         Фурнітура
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </div>
             </li>
             <li>
-              <a href="/window" className="nav-link">
+              <Link href="/window" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
                 металопластикові ВІКНА
-              </a>
+              </Link>
             </li>
             <li>
               <div className="nav-link mob-menu-drop">
@@ -310,29 +310,29 @@ function Header() {
                 >
                   <ul>
                     <li>
-                      <a href="/dveri/metaloplastukovi-dveri" className="nav-link">
+                      <Link href="/dveri/metaloplastukovi-dveri" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
                         Металопластикові двері
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/dveri/broniovani-dveri" className="nav-link">
+                      <Link href="/dveri/broniovani-dveri" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
                         Броньовані двері
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/dveri/mijkimnatni-dveri" className="nav-link">
+                      <Link href="/dveri/mijkimnatni-dveri" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
                         Міжкімнатні двері
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/dveri/protupojejni-dveri" className="nav-link">
+                      <Link href="/dveri/protupojejni-dveri" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
                         Двері протипожежні
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/dveri/tehnichni-dveri" className="nav-link">
+                      <Link href="/dveri/tehnichni-dveri" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
                         Технічні двері
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -347,9 +347,9 @@ function Header() {
                     showVorota ? "showVorota" : null
                   }`}>
                     <ul>
-                      <li><a href="/vorota/garajni-vorota" className="nav-link">Гаражні ворота</a></li>
-                      <li><a href="/vorota/vidkatni-vorota" className="nav-link">Відкатні ворота</a></li>
-                      <li><a href="/vorota/avtomatuka" className="nav-link">Автоматика</a></li>
+                      <li><Link href="/vorota/garajni-vorota" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Гаражні ворота</Link></li>
+                      <li><Link href="/vorota/vidkatni-vorota" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Відкатні ворота</Link></li>
+                      <li><Link href="/vorota/avtomatuka" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Автоматика</Link></li>
                     </ul>
                   </div>
               </div>
@@ -361,9 +361,9 @@ function Header() {
                     showRoletu ? "showRoletu" : null
                   }`}>
                   <ul>
-                    <li><a  href="/roletu/aluminievi-roletu" className="nav-link">Алюмінієві</a></li>
-                    <li><a  href="/roletu/roletni-vorota" className="nav-link">Ролетні ворота</a></li>
-                    <li><a  href="/roletu/roletu-na-vikna" className="nav-link">Ролети на вікна</a></li>
+                    <li><Link  href="/roletu/aluminievi-roletu" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Алюмінієві</Link></li>
+                    <li><Link  href="/roletu/roletni-vorota" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Ролетні ворота</Link></li>
+                    <li><Link  href="/roletu/roletu-na-vikna" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Ролети на вікна</Link></li>
                   </ul>
                 </div>
               </div>
@@ -375,10 +375,10 @@ function Header() {
                     showJaluzi ? "showJaluzi" : null
                   }`}>
                   <ul>
-                    <li><a href="/jaluzi/den-nich" className="nav-link">День-ніч</a></li>
-                    <li><a href="/jaluzi/horuzontalni" className="nav-link">Горизонтальні</a></li>
-                    <li><a href="/jaluzi/vertukalni" className="nav-link">Вертикальні</a></li>
-                    <li><a href="/jaluzi/rulonni-chtoru" className="nav-link">Рулонні штори</a></li>
+                    <li><Link href="/jaluzi/den-nich" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>День-ніч</Link></li>
+                    <li><Link href="/jaluzi/horuzontalni" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Горизонтальні</Link></li>
+                    <li><Link href="/jaluzi/vertukalni" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Вертикальні</Link></li>
+                    <li><Link href="/jaluzi/rulonni-chtoru" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Рулонні штори</Link></li>
                   </ul>
                  </div>
               </div>
@@ -390,19 +390,19 @@ function Header() {
                     showComplekt ? "showComplekt" : null
                   }`}>
                     <ul>
-                      <li><a href="/complektuychi/pidvikonnia" className="nav-link">Підвіконня</a></li>
-                      <li><a href="/complektuychi/vidluvu" className="nav-link">Відливи</a></li>
-                      <li><a href="/complektuychi/moskitni-sitku" className="nav-link">Москітні сітки</a></li>
-                      <li><a href="/complektuychi/furnitura" className="nav-link">Фурнітура</a></li>
+                      <li><Link href="/complektuychi/pidvikonnia" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Підвіконня</Link></li>
+                      <li><Link href="/complektuychi/vidluvu" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Відливи</Link></li>
+                      <li><Link href="/complektuychi/moskitni-sitku" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Москітні сітки</Link></li>
+                      <li><Link href="/complektuychi/furnitura" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Фурнітура</Link></li>
                     </ul>
                   </div>
               </div>
             </li>
          
             <li>
-              <a href="#" className="nav-link">
+              <Link href="/contact" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
                 КОНТАКТИ
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
