@@ -5,15 +5,34 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  background-color: orangered;
 }
 .con-title {
   font-size: 80px;
+  position: absolute;
+  top: 500px;
+  left: 470px;
 }
 
 .con-img {
   position: absolute;
   top: 350px;
-  right: 400px;
+  right: 500px;
   height: 400px;
   width: 185px;
+}
+.con-window{
+  position: absolute;
+  top: 320px;
+  right: 200px;
+  height: 400px;
+  width: 300px;
+}
+
+.con-rolet{
+  position: absolute;
+  top: 350px;
+  left: 200px;
+  height: 400px;
+  width: 300px;
 }

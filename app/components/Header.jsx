@@ -27,10 +27,10 @@ function Header() {
               <br /> 29 Березня, 45а
             </p>
             <div className="tel-block">
-              <Link href="tel:+380503745265" className="nav-link header-tel">
+              <Link href="tel:+380503745265" className=" header-tel">
                 050-374-52-65
               </Link>
-              <Link href="tel:+380673723780" className="nav-link header-tel">
+              <Link href="tel:+380673723780" className=" header-tel">
                 067-372-37-80
               </Link>
             </div>
@@ -89,7 +89,10 @@ function Header() {
                 <div className="drop-down-list-wrap">
                   <ul className="drop-down-list">
                     <li>
-                      <Link href="/dveri/metaloplastukovi-dveri" className="nav-link">
+                      <Link
+                        href="/dveri/metaloplastukovi-dveri"
+                        className="nav-link"
+                      >
                         Металопластикові двері
                       </Link>
                     </li>
@@ -99,12 +102,18 @@ function Header() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/dveri/mijkimnatni-dveri" className="nav-link">
+                      <Link
+                        href="/dveri/mijkimnatni-dveri"
+                        className="nav-link"
+                      >
                         Міжкімнатні двері
                       </Link>
                     </li>
                     <li>
-                      <Link href="/dveri/protupojejni-dveri" className="nav-link">
+                      <Link
+                        href="/dveri/protupojejni-dveri"
+                        className="nav-link"
+                      >
                         Двері протипожежні
                       </Link>
                     </li>
@@ -147,7 +156,10 @@ function Header() {
                 <div className="drop-down-list-wrap">
                   <ul className="drop-down-list">
                     <li>
-                      <Link href="/roletu/aluminievi-roletu" className="nav-link">
+                      <Link
+                        href="/roletu/aluminievi-roletu"
+                        className="nav-link"
+                      >
                         Алюмінієві
                       </Link>
                     </li>
@@ -200,7 +212,10 @@ function Header() {
                 <div className="drop-down-list-wrap">
                   <ul className="drop-down-list">
                     <li>
-                      <Link href="/complektuychi/pidvikonnia" className="nav-link">
+                      <Link
+                        href="/complektuychi/pidvikonnia"
+                        className="nav-link"
+                      >
                         Підвіконня
                       </Link>
                     </li>
@@ -210,12 +225,18 @@ function Header() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/complektuychi/moskitni-sitku" className="nav-link">
+                      <Link
+                        href="/complektuychi/moskitni-sitku"
+                        className="nav-link"
+                      >
                         Москітні сітки
                       </Link>
                     </li>
                     <li>
-                      <Link href="/complektuychi/furnitura" className="nav-link">
+                      <Link
+                        href="/complektuychi/furnitura"
+                        className="nav-link"
+                      >
                         Фурнітура
                       </Link>
                     </li>
@@ -247,13 +268,17 @@ function Header() {
         <nav className={`mob-menu-nav ${showMobMenu ? "activeModal" : null}`}>
           <ul className="mob-menu-list">
             <li>
-              <Link href="/" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
+              <Link
+                href="/"
+                className="nav-link"
+                onClick={() => setShowMobMenu(!showMobMenu)}
+              >
                 ГОЛОВНА
               </Link>
             </li>
             <li>
               <div className="nav-link mob-menu-drop">
-                <p onClick={() => setShowService(!showService)}>
+                <p className="nav-mob-link" onClick={() => setShowService(!showService)}>
                   {" "}
                   РЕМОНТ ТА ОБСЛУГОВУВАННЯ <span>⏷</span>{" "}
                 </p>
@@ -265,27 +290,47 @@ function Header() {
                 >
                   <ul className="mob-menu-drop-list">
                     <li>
-                      <Link href="/service/remont-rolet" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
+                      <Link
+                        href="/service/remont-rolet"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
                         Pолети
                       </Link>
                     </li>
                     <li>
-                      <Link href="/service/remont-dverey" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
+                      <Link
+                        href="/service/remont-dverey"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
                         Двері будь-які
                       </Link>
                     </li>
                     <li>
-                      <Link href="/service/remont-vikon" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
+                      <Link
+                        href="/service/remont-vikon"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
                         Вікна
                       </Link>
                     </li>
                     <li>
-                      <Link href="/service/remont-vorit" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
+                      <Link
+                        href="/service/remont-vorit"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
                         Ворота
                       </Link>
                     </li>
                     <li>
-                      <Link href="/service/furnitura" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
+                      <Link
+                        href="/service/furnitura"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
                         Фурнітура
                       </Link>
                     </li>
@@ -294,7 +339,11 @@ function Header() {
               </div>
             </li>
             <li>
-              <Link href="/window" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
+              <Link
+                href="/window"
+                className="nav-link"
+                onClick={() => setShowMobMenu(!showMobMenu)}
+              >
                 металопластикові ВІКНА
               </Link>
             </li>
@@ -308,29 +357,49 @@ function Header() {
                     showDoor ? "showDoor" : null
                   }`}
                 >
-                  <ul>
+                  <ul className="mob-menu-drop-list">
                     <li>
-                      <Link href="/dveri/metaloplastukovi-dveri" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
+                      <Link
+                        href="/dveri/metaloplastukovi-dveri"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
                         Металопластикові двері
                       </Link>
                     </li>
                     <li>
-                      <Link href="/dveri/broniovani-dveri" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
+                      <Link
+                        href="/dveri/broniovani-dveri"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
                         Броньовані двері
                       </Link>
                     </li>
                     <li>
-                      <Link href="/dveri/mijkimnatni-dveri" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
+                      <Link
+                        href="/dveri/mijkimnatni-dveri"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
                         Міжкімнатні двері
                       </Link>
                     </li>
                     <li>
-                      <Link href="/dveri/protupojejni-dveri" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
+                      <Link
+                        href="/dveri/protupojejni-dveri"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
                         Двері протипожежні
                       </Link>
                     </li>
                     <li>
-                      <Link href="/dveri/tehnichni-dveri" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
+                      <Link
+                        href="/dveri/tehnichni-dveri"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
                         Технічні двері
                       </Link>
                     </li>
@@ -343,64 +412,194 @@ function Header() {
                 <p onClick={() => setShowVorota(!showVorota)}>
                   ВОРОТА <span>⏷</span>
                 </p>
-                <div   className={`mob-menu-drop-list-wrap ${
+                <div
+                  className={`mob-menu-drop-list-wrap ${
                     showVorota ? "showVorota" : null
-                  }`}>
-                    <ul>
-                      <li><Link href="/vorota/garajni-vorota" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Гаражні ворота</Link></li>
-                      <li><Link href="/vorota/vidkatni-vorota" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Відкатні ворота</Link></li>
-                      <li><Link href="/vorota/avtomatuka" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Автоматика</Link></li>
-                    </ul>
-                  </div>
+                  }`}
+                >
+                  <ul className="mob-menu-drop-list">
+                    <li>
+                      <Link
+                        href="/vorota/garajni-vorota"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
+                        Гаражні ворота
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/vorota/vidkatni-vorota"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
+                        Відкатні ворота
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/vorota/avtomatuka"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
+                        Автоматика
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li>
-              <div className="nav-link mob-menu-drop">
-                <p onClick={() => setShowRoletu(!showRoletu)}>Ролети <span>⏷</span></p>
-                <div className={`mob-menu-drop-list-wrap ${
+              <div className="nav-mob-link mob-menu-drop">
+                <p onClick={() => setShowRoletu(!showRoletu)}>
+                  Ролети <span>⏷</span>
+                </p>
+                <div
+                  className={`mob-menu-drop-list-wrap ${
                     showRoletu ? "showRoletu" : null
-                  }`}>
-                  <ul>
-                    <li><Link  href="/roletu/aluminievi-roletu" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Алюмінієві</Link></li>
-                    <li><Link  href="/roletu/roletni-vorota" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Ролетні ворота</Link></li>
-                    <li><Link  href="/roletu/roletu-na-vikna" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Ролети на вікна</Link></li>
+                  }`}
+                >
+                  <ul className="mob-menu-drop-list">
+                    <li>
+                      <Link
+                        href="/roletu/aluminievi-roletu"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
+                        Алюмінієві
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/roletu/roletni-vorota"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
+                        Ролетні ворота
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/roletu/roletu-na-vikna"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
+                        Ролети на вікна
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </div>
             </li>
             <li>
               <div className="nav-link mob-menu-drop">
-                <p onClick={() => setShowJaluzi(!showJaluzi)}>ЖАЛЮЗІ <span>⏷</span></p>
-                 <div className={`mob-menu-drop-list-wrap ${
+                <p onClick={() => setShowJaluzi(!showJaluzi)}>
+                  ЖАЛЮЗІ <span>⏷</span>
+                </p>
+                <div
+                  className={`mob-menu-drop-list-wrap ${
                     showJaluzi ? "showJaluzi" : null
-                  }`}>
-                  <ul>
-                    <li><Link href="/jaluzi/den-nich" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>День-ніч</Link></li>
-                    <li><Link href="/jaluzi/horuzontalni" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Горизонтальні</Link></li>
-                    <li><Link href="/jaluzi/vertukalni" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Вертикальні</Link></li>
-                    <li><Link href="/jaluzi/rulonni-chtoru" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Рулонні штори</Link></li>
+                  }`}
+                >
+                  <ul className="mob-menu-drop-list">
+                    <li>
+                      <Link
+                        href="/jaluzi/den-nich"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
+                        День-ніч
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/jaluzi/horuzontalni"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
+                        Горизонтальні
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/jaluzi/vertukalni"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
+                        Вертикальні
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/jaluzi/rulonni-chtoru"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
+                        Рулонні штори
+                      </Link>
+                    </li>
                   </ul>
-                 </div>
+                </div>
               </div>
             </li>
             <li>
               <div className="nav-link mob-menu-drop">
-              <p onClick={() => setShowComplekt(!showComplekt)}>Комплектуючі <span>⏷</span></p>
-                <div className={`mob-menu-drop-list-wrap ${
+                <p onClick={() => setShowComplekt(!showComplekt)}>
+                  Комплектуючі <span>⏷</span>
+                </p>
+                <div
+                  className={`mob-menu-drop-list-wrap ${
                     showComplekt ? "showComplekt" : null
-                  }`}>
-                    <ul>
-                      <li><Link href="/complektuychi/pidvikonnia" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Підвіконня</Link></li>
-                      <li><Link href="/complektuychi/vidluvu" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Відливи</Link></li>
-                      <li><Link href="/complektuychi/moskitni-sitku" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Москітні сітки</Link></li>
-                      <li><Link href="/complektuychi/furnitura" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>Фурнітура</Link></li>
-                    </ul>
-                  </div>
+                  }`}
+                >
+                  <ul className="mob-menu-drop-list">
+                    <li>
+                      <Link
+                        href="/complektuychi/pidvikonnia"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
+                        Підвіконня
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/complektuychi/vidluvu"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
+                        Відливи
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/complektuychi/moskitni-sitku"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
+                        Москітні сітки
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/complektuychi/furnitura"
+                        className="nav-link"
+                        onClick={() => setShowMobMenu(!showMobMenu)}
+                      >
+                        Фурнітура
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
-         
+
             <li>
-              <Link href="/contact" className="nav-link" onClick={() => setShowMobMenu(!showMobMenu)}>
+              <Link
+                href="/contact"
+                className="nav-link"
+                onClick={() => setShowMobMenu(!showMobMenu)}
+              >
                 КОНТАКТИ
               </Link>
             </li>
